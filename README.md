@@ -1,10 +1,25 @@
 # CSharp.Exercises.App
 Practicing exercises to learn C#.
 
-Tools:
+## Introduction
+This project contains a list of solutions for some common exercises developed with C#.
+Hope, these exercises help more people to improve theirs C# programming skills.
+
+## Tools
 - Visual Studio 2019
 - Console Application
 
+## Content
+
+### Arrays
+* BubleSort
+
+### Loops
+* Fibonacci
+
+### Strings
+* Reverse
+* Palindrome
 
 
 
