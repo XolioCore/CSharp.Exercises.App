@@ -51,5 +51,40 @@ namespace CSharp.Exercises.App.Samples
             Console.WriteLine((isPalindrome?"Palindrome":"Not Palindrome"));
             Console.ReadLine();
         }
+
+
+        /// <summary>
+        /// How to find the first non repeated character of a given String?
+        /// </summary>
+        /// <param name="input"></param>
+        static void NonRepeated(string input)
+        {
+            char[] chars = input.ToArray();
+            char foundChar = ' ';
+
+            for (int i = 0; i <= chars.Length - 1; i++)
+            {
+                for (int j = 0; j <= chars.Length - 1; j++)
+                {
+                    foundChar = chars[i];
+                    if (!(i == j))
+                    {
+                        if (chars[i] == chars[j])
+                        {
+                            foundChar = ' ';
+                            break;
+                        }
+                    }
+                }
+
+                if (!(foundChar == ' '))
+                {
+                    break;
+                }
+            }
+
+            Console.WriteLine("nonRepeated:{0}", foundChar);
+
+        }
     }
 }
