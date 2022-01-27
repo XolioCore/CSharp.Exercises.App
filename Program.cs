@@ -10,7 +10,9 @@ namespace CSharp.Exercises.App
     {
         static void Main(string[] args)
         {
-            Samples.Arrays.Run();
+            //Samples.Arrays.Run();
+            Samples.Strings.Run();
+            //Exercises.Problems.Run();  
         }
     }
 }

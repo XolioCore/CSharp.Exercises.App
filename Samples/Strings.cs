@@ -10,12 +10,23 @@ namespace CSharp.Exercises.App.Samples
     {
         public static void Run()
         {
-            //Reverse("Hello world");
+            ReverseA("Hello world");
+            ReverseB("Hello world");
             //Palindrome("A Santa at Nasa");
         }
 
 
-        public static void Reverse(string input)
+        public static void ReverseA(string input)
+        {
+            char[] chars = input.ToArray();
+            
+            string result = new string(chars.Reverse().ToArray());
+
+            Console.WriteLine(result);
+            Console.ReadLine();
+        }
+
+        public static void ReverseB(string input)
         {
             int lenght = input.Length;
             char[] chars = input.ToArray();
@@ -32,7 +43,11 @@ namespace CSharp.Exercises.App.Samples
             Console.ReadLine();
         }
 
-
+        /// <summary>
+        /// A string that doesn't changed when reversed (it reads the same backward and forward).
+        /// Examples: "eye" is a palindrome
+        /// </summary>
+        /// <param name="input"></param>
         public static void Palindrome(string input)
         {
             bool isPalindrome = true;
