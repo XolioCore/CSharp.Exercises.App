@@ -13,6 +13,7 @@ Hope, these exercises help more people to improve theirs C# programming skills.
 
 ### Arrays
 * BubleSort
+* find_total
 
 ### Loops
 * Fibonacci
@@ -21,5 +22,7 @@ Hope, these exercises help more people to improve theirs C# programming skills.
 * Reverse
 * Palindrome
 
+### Problems
+* CenturyFromYear
 
 
