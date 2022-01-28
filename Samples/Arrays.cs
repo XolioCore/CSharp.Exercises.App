@@ -33,6 +33,38 @@ namespace CSharp.Exercises.App.Samples
             Console.ReadKey();
         }
 
+        public static bool AreAnagrams(string s1, string s2)
+        {
+            if (s1 == null) throw new ArgumentNullException("s1");
+            if (s2 == null) throw new ArgumentNullException("s2");
+
+            var chars = new Dictionary<char, int>();
+            foreach (char c in s1)
+            {
+                if (!chars.ContainsKey(c))
+                    chars[c] = 0;
+                chars[c]++;
+            }
+            foreach (char c in s2)
+            {
+                if (!chars.ContainsKey(c))
+                    return false;
+                chars[c]--;
+            }
+
+            return chars.Values.All(i => i == 0);
+        }
+
+        /// <summary>
+        /// Total all the values that are even numbers
+        /// </summary>
+        /// <param name="intArray"></param>
+        /// <returns></returns>
+        public static long TotalAllEvenNumbers(int[] intArray)
+        {
+            return intArray.Where(i => i % 2 == 0).Sum(i => (long)i);
+        }
+
         /// <summary>
         /// Given an array of integers, keep a total score based on the following:
         /// 1.- Add 1 point for each even number in the array

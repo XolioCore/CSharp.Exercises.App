@@ -11,7 +11,8 @@ namespace CSharp.Exercises.App
         static void Main(string[] args)
         {
             //Samples.Arrays.Run();
-            Samples.Strings.Run();
+            //Samples.Strings.Run();
+            Samples.Loops.Run();
             //Exercises.Problems.Run();  
         }
     }
