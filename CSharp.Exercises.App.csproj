@@ -48,6 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Samples\Arrays.cs" />
     <Compile Include="Samples\Loops.cs" />
+    <Compile Include="Samples\Numbers.cs" />
     <Compile Include="Samples\Strings.cs" />
   </ItemGroup>
   <ItemGroup>
