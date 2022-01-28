@@ -14,6 +14,7 @@ Hope, these exercises help more people to improve theirs C# programming skills.
 ### Arrays
 * BubleSort
 * find_total
+* TotalAllEvenNumbers
 
 ### Loops
 * Fibonacci
