@@ -8,6 +8,7 @@ namespace CSharp.Exercises.App.Samples
 {
     public static class Arrays
     {
+
         public static void Run()
         {
             BubleSort(new int[10] { 23, 2, 3, 34, 6, 1, 24, 45, 78, 8 });
